@@ -1,5 +1,9 @@
 const { slateDark } = require('@radix-ui/colors');
 import { colors } from './theme/colors';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
 const defaultTheme = require('tailwindcss/defaultTheme');
 const {
   iconsPlugin,
@@ -139,3 +143,4 @@ const tailwindConfig = {
 };
 
 module.exports = tailwindConfig;
+
